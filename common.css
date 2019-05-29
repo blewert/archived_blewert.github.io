@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700,500|Source+Sans+Pro:300,400,700&display=swap');
+
+h1, h2
+{
+    font-family: "Quicksand", sans-serif;
+    margin:0;
+    padding:0;
+}
+
+p
+{
+    font-family: "Source Sans Pro", sans-serif;
+    margin:0;
+    padding:0;
+}
+
+h1
+{
+    font-size:3rem;
+}
+
+main
+{
+    width: 50%;
+    margin:0px auto;
+    margin-top: 10%;
+}
+
+h2
+{
+    font-size:1.5rem;
+    margin-top:3rem;
+    margin-bottom:0.5rem;
+    font-weight:500;
+}
+
+p
+{
+    line-height:1.75rem;
+    margin-top:1.5rem;
+}
+
+article.first
+{
+    margin-top:10vh;
+}
+
+article
+{
+    margin-bottom: 20vh;
+}
+
+article.full-height
+{
+    height: 80vh;
+}
+
+.images
+{
+    margin-top:1rem;
+    display:flex;
+    width:100%;
+    
+    flex-wrap:wrap;
+}
+
+
+.images img
+{
+    border-radius:1rem;
+    cursor: pointer;
+    width:calc(20vh - 1.5rem);
+    height:20vh;
+    /* height:100%; */
+    object-fit: cover;
+    margin-right:1.5rem;
+    margin-top:1.5rem;
+    
+    align-items:stretch;
+    align-content: stretch;
+
+    transition:0.1s;
+    filter: contrast(75%);
+}
+
+.images img:hover
+{
+    filter: contrast(100%);
+}
+
+.images img::before
+{
+    content:"a";
+    display:block;
+}
+
+info-bar
+{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:2rem;
+}
+
+info-bar > a
+{
+    margin-right:1rem;
+}
+
+kbd
+{
+    /* background-color:#5292f3; */
+    background-color:#333;
+    color:white;
+    padding:0.75rem 1rem;
+    display:inline-block;
+    border-radius:1rem;
+    font-family:"Quicksand", sans-serif;
+    font-weight:100;
+    font-size:11pt;
+}
+
+kbd i
+{
+    margin-right:1rem;
+}
+
+.orange.link
+{
+    background-color:#ffb300;
+}
+
+.blue.link
+{
+    background-color:#0095ff;
+}
+
+.red.link
+{
+    background-color:#ff6565;
+}
+
+.link
+{
+    color:white;
+    border-radius:1rem;
+    padding:0.75rem 1rem;
+    font-family:"Quicksand", sans-serif;
+    font-weight:100;
+    font-size:11pt;
+    text-decoration: none;
+    transition:0.1s;
+}
+
+.link:hover
+{
+    opacity:0.8;
+}
+
+.link i
+{
+    margin-right:1rem;
+}
