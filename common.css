@@ -69,8 +69,8 @@ article.full-height
 {
     border-radius:1rem;
     cursor: pointer;
-    width:calc(20vh - 1.5rem);
-    height:20vh;
+    width:calc(20vmin - 1.5rem);
+    height:20vmin;
     /* height:100%; */
     object-fit: cover;
     margin-right:1.5rem;
@@ -81,6 +81,8 @@ article.full-height
 
     transition:0.1s;
     filter: contrast(75%);
+
+    background: #ccc;
 }
 
 .images img:hover
