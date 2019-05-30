@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:700,500|Source+Sans+Pro:300,400,700&display=swap');
 
+h1 i
+{
+    position:absolute;
+    color: #ccc;
+    transform: translate(-200%, 12.5%);
+}
+
+h1 i:hover
+{
+    color: #000;
+}
+
 h1, h2
 {
+    position:relative;
     font-family: "Quicksand", sans-serif;
     margin:0;
     padding:0;
