@@ -11,11 +11,13 @@
     <body>
 
         <image-viewer>
+            <figure>
+            </figure>
             <aside>
                 <section>
                     <h1>title of image</h1>
                     <p>Vague description of content</p>
-                    <button><i class="fas fa-times-circle"></i>Close</button>
+                    <button id="close-image-button"><i class="fas fa-times-circle"></i>Close</button>
                 </section>
             </aside>
         </image-viewer>
@@ -49,10 +51,10 @@
                 </info-bar>
 
                 <aside class="images">
-                    <img src="img/games/elemental1.png"/>
-                    <img src="img/games/elemental2.png"/>
-                    <img src="img/games/elemental3.png"/>
-                    <img src="img/games/elemental4.png"/>
+                    <img src="img/games/elemental1.png" data-title="Sunset" data-caption="An in-game screenshot of an environment generated entirely through a procedural algorithm. The terrain is generated using stochastic noise, and an L-System is used to carve river patterns into the terrain. The terrain is then painted appropriately. Rocks, trees and rock towers are built and placed procedurally around the canyon rim." />
+                    <img src="img/games/elemental2.png" data-title="Canyon" data-caption="An in-game screenshot of an environment generated entirely through a procedural algorithm. The terrain is generated using stochastic noise, and an L-System is used to carve river patterns into the terrain. The terrain is then painted appropriately. Rocks, trees and rock towers are built and placed procedurally around the canyon rim." />
+                    <img src="img/games/elemental3.png" data-title="Elementals" data-caption="Some enemies within the game -- I did not create these meshes. However, I was responsible for implementing their behaviour and interaction in the game." />
+                    <img src="img/games/elemental4.png" data-title="Tower" data-caption="A screenshot of the tower which the player must defend. I developed a timer-based particle ring buffer system for VFX, such as explosions and hit markers. " />
                 </aside>
             </article>
 
@@ -65,7 +67,7 @@
                 </p>
                 <p>
                     My roles within the project involved the design &amp; development of the information site, associated tools, games, blog and the software 
-                    which resides on the arcade machines themselves. The interface follows a retro 8-bit aesthetic. The background of the interface is a video clip
+                    which resides on the arcade machines themselves. This software included a joypad to keyboard executable, batch scripts for booting in kiosk mode, and a html-based interface. The interface follows a retro 8-bit aesthetic. The background of the interface is a video clip
                     containing advertisements for various events around the university campus, and student work. Some screenshots of the arcade interface is found below, along with links to the project's website,
                     and blog.
                 </p>
@@ -80,10 +82,10 @@
                 </info-bar>
 
                 <aside class="images">
-                    <img src="img/games/arcade.png"/>
-                    <img src="img/games/arcade2.png"/>
-                    <img src="img/games/arcade3.png"/>
-                    <img src="img/games/arcade4.png"/>
+                    <img src="img/games/arcade.png"  data-title="Start screen" data-caption="The start screen shown on the arcade machines." />
+                    <img src="img/games/arcade2.png" data-title="Main menu" data-caption="The main menu. From here, the player can select games to play, information, and development credits." />
+                    <img src="img/games/arcade3.png" data-title="About" data-caption="Information displayed surrounding the project." />
+                    <img src="img/games/arcade4.png" data-title="Credits" data-caption="Various credits related to development of this project." />
                 </aside>
             </article>
 
@@ -95,7 +97,7 @@
                     play the game, playstyle data is recorded throughout their session and saved into an online database for further analysis.
                 </p>
                 <p>
-                    Adi's maze features an 8-bit aesthetic, reminiscent of retro arcade cabinets and video games of the 80s. A video link and screenshots of the game can be seen below.
+                    Adi's maze features an 8-bit aesthetic, reminiscent of retro arcade cabinets and video games of the 80s. I designed and developed everything about this game -- from the sprites, to the code. A video link and screenshots of the game can be seen below.
                 </p>
 
                 <info-bar>
@@ -109,10 +111,10 @@
                 </info-bar>
 
                 <aside class="images">
-                        <img src="img/games/adis-maze1.png"/>
-                        <img src="img/games/adis-maze2.png"/>
-                        <img src="img/games/adis-maze3.png"/>
-                        <img src="img/games/adis-maze4.png"/>
+                        <img src="img/games/adis-maze1.png" data-title="Main menu" data-caption="The main menu screen for Adi's Maze." />
+                        <img src="img/games/adis-maze2.png" data-title="Character selection" data-caption="The character selection screen." />
+                        <img src="img/games/adis-maze3.png" data-title="The game" data-caption="One instance of a level built by a procedural maze generation algorithm." />
+                        <img src="img/games/adis-maze4.png" data-title="Death screen" data-caption="The death screen. There are multiple enemies in Adi's Maze, all with different AI behaviours." />
                     </aside>
 
             </article>
@@ -138,10 +140,10 @@
                     </info-bar>
     
                     <aside class="images">
-                            <img src="img/games/qong1.png"/>
-                            <img src="img/games/qong2.png"/>
-                            <img src="img/games/qong3.png"/>
-                            <img src="img/games/qong4.png"/>
+                            <img src="img/games/qong1.png" data-title="Main menu" data-caption="The main menu screen of Qong." />
+                            <img src="img/games/qong2.png" data-title="Qong" data-caption="An example of gameplay within Qong. Notice the similarities to Pong." />
+                            <img src="img/games/qong3.png" data-title="Qong" data-caption="An example of gameplay within Qong. Notice the similarities to Pong." />
+                            <img src="img/games/qong4.png" data-title="Death screen" data-caption="The death screen. The title changes dynamically to reflect the player's performance." />
                         </aside>
 
 
@@ -177,9 +179,9 @@
                 </info-bar>
 
                 <aside class="images">
-                    <img src="img/games/rhib1.png"/>
-                    <img src="img/games/rhib2.png"/>
-                    <img src="img/games/sea.gif"/>
+                    <img src="img/games/rhib1.png" data-title="RHIB Simulator" data-caption="An example of a RHIB within the in-game environment. I did not make the boat, however everything else is my own. I programed the buoyancy physics, sampling methods, sea-tiling system, sea shader, foam and all interactive elements of the game." />
+                    <img src="img/games/rhib2.png" data-title="RHIB Simulator" data-caption="An example of a RHIB within the in-game environment. I did not make the boat, however everything else is my own. I programed the buoyancy physics, sampling methods, sea-tiling system, sea shader, foam and all interactive elements of the game." />
+                    <img src="img/games/sea.gif" data-title="Sea System" data-caption="An example of the sea system, which uses many layers of sine waves to simulate waves. Notice the fresnel shading of the water." />
                 </aside>
                 
             </article>
@@ -205,9 +207,9 @@
                     </info-bar>
     
                     <aside class="images">
-                        <img src="img/games/galaxy1.png"/>
-                        <img src="img/games/galaxy2.png"/>
-                        <img src="img/games/galaxy3.png"/>
+                        <img src="img/games/galaxy1.png" data-title="Galaxies" data-caption="An example of a galaxy generated with the system." />
+                        <img src="img/games/galaxy2.png" data-title="Galaxies" data-caption="An example of a galaxy generated with the system." />
+                        <img src="img/games/galaxy3.png" data-title="Galaxies" data-caption="An example of a galaxy generated with the system." />
                     </aside>
             </article>
             
@@ -233,12 +235,12 @@
                     </info-bar>
     
                     <aside class="images">
-                        <img src="img/games/sett1.jpg"/>
-                        <img src="img/games/sett2.png"/>
-                        <img src="img/games/sett5.jpg"/>
-                        <img src="img/games/sett6.png"/>
-                        <img src="img/games/sett8.jpg"/>
-                        <img src="img/games/sett9.png"/>
+                        <img src="img/games/sett1.jpg" data-title="Village" data-caption="A village generated procedurally." />
+                        <img src="img/games/sett2.png" data-title="Parcels" data-caption="A visualisation showing land parcels (area of land before buildings are placed)." />
+                        <img src="img/games/sett5.jpg" data-title="Estate"  data-caption="A housing estate generated procedurally." />
+                        <img src="img/games/sett6.png" data-title="Village" data-caption="A medieval village procedurally generated with this system." />
+                        <img src="img/games/sett8.jpg" data-title="City"    data-caption="A procedural city." />
+                        <img src="img/games/sett9.png" data-title="Towns"   data-caption="Procedurally generated towns, connected by generated road infrastructure." />
                     </aside>
             </article>
 

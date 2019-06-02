@@ -3,18 +3,29 @@ image-viewer
     position:fixed;
     z-index:15;
     background-color:#ccc;
-    display:block;
     height:100vh;
     width:100vw;
     top:0;
     left:0;
-    opacity:1.0;
+    opacity:1.0;   
+    
+    display:none;
+}
 
-    background: url(img/games/sea.gif) #000;
+image-viewer figure
+{
+    position:fixed;
+    z-index:16;
+    top:0;
+    left:0;
+    height:100vh;
+    width: 80vw;
+    padding:0;
+    margin:0;
+    background: url(img/games/sea.gif) #eee;
     background-size: contain;
     background-position:center;
     background-repeat: no-repeat;
-    
 }
 
 image-viewer aside
@@ -41,9 +52,21 @@ image-viewer button
     font-family: "Quicksand", sans-serif;
     padding: 0.5rem 1.5rem;
     font-size:1rem;
+    transition:0.1s;
+    cursor: pointer;
+    margin-top:10vh;
+    float:right;
+}
+
+
+image-viewer button:hover
+{
+    background-color: black;
+    color:white;
 }
 
 image-viewer button i
 {
     margin-right:1rem;
 }
+
