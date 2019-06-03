@@ -38,6 +38,7 @@ main.homepage categories a
 main.homepage categories a:hover
 {
     color:black;
+    border-color: #ccc;
     background-color:transparent;
 }
 
