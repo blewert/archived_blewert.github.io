@@ -83,12 +83,14 @@ body
 
 .left.slide
 
-    display: flex
+    display: grid
+    grid-template-columns: 1fr 1fr
     align-items: center
     padding: 0 10vw
 
-    .wrap
-        display: block
+    img
+        align-self: flex-end
+        justify-content: right
 
     height: 70vh
 
@@ -119,10 +121,82 @@ body
             cursor: pointer
 
     &.gradient
-        background: #DA4453;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+        // background: #667db6;  /* fallback for old browsers */
+        // background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+        // background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
         color: white
+
+
+
+
+.right.slide
+
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    padding: 0 10vw
+
+    .wrap
+        align-self: right
+
+    img
+        align-self: flex-end
+        justify-content: right
+
+    height: 70vh
+
+    h1
+        font-size: $font-size-xlarge * 2
+        text-align: right
+    
+    p
+        margin-top: 3rem
+        font-size: $font-size-xnormal
+        font-family: $font-main
+        line-height: $font-size-xnormal * 1.5
+        max-width: 500px
+        text-align: right
+
+    button
+        background-color: transparent
+        border: 2px solid white
+        border-radius: 0.5rem
+        color: white
+        font-family: $font-title
+        font-weight: 800
+        font-size: $font-size-xnormal
+        padding: 0.5rem 1rem
+        margin-top: 3.5rem
+
+        &:hover
+            background-color: white
+            color: $fg-color
+            cursor: pointer
+
+    &.gradient
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+        // background: #667db6;  /* fallback for old browsers */
+        // background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+        // background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        color: white
+
+
+
+
 
     
