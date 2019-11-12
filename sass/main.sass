@@ -1,0 +1,128 @@
+
+@import 'reset'
+
+//Font families
+$font-title: "Raleway", sans-serif
+$font-main: "Poppins", sans-serif
+
+//Colours
+$fg-color: #333
+$fg-color-light: #ccc
+
+//Font sizes
+$font-size-xlarge: 3rem
+$font-size-large: 2rem
+$font-size-xnormal: 1.5rem
+$font-size-normal: 1rem
+
+
+body
+    color: $fg-color
+
+
+
+.slide
+    height: 100vh
+
+    &.centered
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .wrap
+            display: block
+
+    h1
+        font-weight: 800
+        font-family: $font-title
+        font-size: $font-size-xlarge
+
+
+    .header
+        h2
+            display: block
+            font-family: $font-title
+
+
+.title.slide
+
+    .title
+        display: flex
+        clear: both
+        flex-direction: row
+        align-items: center
+
+        img
+            margin-right: 4rem
+            width: 150px
+            height: 150px
+            border-radius: 50%
+
+        span
+            display: block
+
+            &:not(:first-child)
+                margin-top: 0.5rem
+
+    h2
+        text-align: center
+        display: table
+        margin: 0 auto
+        margin-top: 8rem
+        font-family: $font-main
+        font-size: $font-size-xnormal
+
+        color: $fg-color-light
+
+        padding: 1rem 2rem
+        border-radius: 0.5rem
+
+        i
+            padding-left: 1rem
+
+
+.left.slide
+
+    display: flex
+    align-items: center
+    padding: 0 10vw
+
+    .wrap
+        display: block
+
+    height: 70vh
+
+    h1
+        font-size: $font-size-xlarge * 2
+    
+    p
+        margin-top: 3rem
+        font-size: $font-size-xnormal
+        font-family: $font-main
+        line-height: $font-size-xnormal * 1.5
+        max-width: 500px
+
+    button
+        background-color: transparent
+        border: 2px solid white
+        border-radius: 0.5rem
+        color: white
+        font-family: $font-title
+        font-weight: 800
+        font-size: $font-size-xnormal
+        padding: 0.5rem 1rem
+        margin-top: 3.5rem
+
+        &:hover
+            background-color: white
+            color: $fg-color
+            cursor: pointer
+
+    &.gradient
+        background: #DA4453;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        color: white
+
+    
