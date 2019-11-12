@@ -1,0 +1,29 @@
+footer
+    background-color: $fg-color
+    color: white
+    font-family: $font-main
+    padding: 3rem 10vw
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+
+    .col
+
+        display: flex
+        justify-content: center
+        font-size: $font-size-normal * 0.85
+
+        line-height: ($font-size-normal * 0.85) * 1.5
+
+        ul
+            li > a
+                color: white
+                text-decoration: none
+
+        h1
+            padding-bottom: 2rem
+            font-size: $font-size-normal
+            font-weight: 800
+            font-family: $font-title
+
+        &:last-child
+            text-align: right

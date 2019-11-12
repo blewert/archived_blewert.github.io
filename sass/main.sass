@@ -15,10 +15,14 @@ $font-size-large: 2rem
 $font-size-xnormal: 1.5rem
 $font-size-normal: 1rem
 
+//Slide heights
+$slide-height: 80vh
+
+@import 'footer'
+
 
 body
     color: $fg-color
-
 
 
 .slide
@@ -79,6 +83,16 @@ body
 
         i
             padding-left: 1rem
+            animation: bob 3s infinite
+
+@keyframes bob
+
+    33%
+        transform: translateY(-5px)
+
+    66%
+        transform: translateY(7px)
+    
 
 
 .left.slide
@@ -92,7 +106,7 @@ body
         align-self: flex-end
         justify-content: right
 
-    height: 70vh
+    height: $slide-height
 
     h1
         font-size: $font-size-xlarge * 2
@@ -145,13 +159,14 @@ body
     padding: 0 10vw
 
     .wrap
-        align-self: right
+        justify-self: end
+        justify-items: end
 
     img
         align-self: flex-end
         justify-content: right
 
-    height: 70vh
+    height: $slide-height
 
     h1
         font-size: $font-size-xlarge * 2
@@ -167,14 +182,15 @@ body
 
     button
         background-color: transparent
-        border: 2px solid white
+        border: 2px solid $fg-color
         border-radius: 0.5rem
-        color: white
+        color: $fg-color
         font-family: $font-title
         font-weight: 800
         font-size: $font-size-xnormal
         padding: 0.5rem 1rem
         margin-top: 3.5rem
+        float: right
 
         &:hover
             background-color: white
